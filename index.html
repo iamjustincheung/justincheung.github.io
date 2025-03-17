@@ -1,1 +1,36 @@
-<h1>Hello</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>My Projects</h1>
+    </header>
+    
+    <section class="projects">
+        <div class="project" onclick="openModal('Project 1', 'Description for project 1.')">
+            <h2>Project 1</h2>
+        </div>
+        <div class="project" onclick="openModal('Project 2', 'Description for project 2.')">
+            <h2>Project 2</h2>
+        </div>
+        <div class="project" onclick="openModal('Project 3', 'Description for project 3.')">
+            <h2>Project 3</h2>
+        </div>
+    </section>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modal-title"></h2>
+            <p id="modal-description"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
